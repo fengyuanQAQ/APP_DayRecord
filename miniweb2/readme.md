@@ -49,6 +49,7 @@
         return Sharirng
    
  文件接口：/file
+ 
     uploadHeadImage:上传头像 post
          参数：MultipartFile file，String userid
          return 文件保存的路径
