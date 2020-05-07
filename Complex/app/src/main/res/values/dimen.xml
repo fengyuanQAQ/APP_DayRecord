@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="divisionLength">10dp</dimen>
+    <dimen name="HeadImageScale">80dp</dimen>
+    <dimen name="normalSize">20sp</dimen>
+    <dimen name="bigSize">24sp</dimen>
+    <dimen name="smallSize">16sp</dimen>
+    <dimen name="cardCorner">5dp</dimen>
+    <dimen name="commonPadding">10dp</dimen>
+    <dimen name="extraSize">30dp</dimen>
+    <dimen name="cardSize">160dp</dimen>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/home_categories"
+        android:id="@+id/home_frameLayout">
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/home_categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:id="@+id/home_home"
+            android:src="@mipmap/ic_home_home_no"
+            android:scaleType="center"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:id="@+id/home_discover"
+            android:src="@mipmap/ic_home_dis_no"
+            android:scaleType="center"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:id="@+id/home_mine"
+            android:src="@mipmap/ic_home_mine_no"
+            android:scaleType="center"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:id="@+id/home_add"
+            android:src="@mipmap/ic_add_add"
+            android:scaleType="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

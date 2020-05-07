@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:background="@color/colorWhite">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_add_back"
+            android:id="@+id/mine_show_close"
+            android:background="@color/colorWhite"
+            android:foreground="?selectableItemBackground"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:textSize="@dimen/normalSize"
+            android:text="默认"
+            android:gravity="center"
+            android:id="@+id/mine_show_title"/>
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/mine_show_edit"
+            android:src="@mipmap/ic_edit"
+            android:background="@color/colorWhite"
+            android:foreground="?selectableItemBackground"
+            android:scaleType="center"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/show_framelayout"
+        android:background="@color/colorGrayTint">
+    </FrameLayout>
+
+</LinearLayout>
+

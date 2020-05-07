@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:background="@color/colorGray">
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/add_share_image"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:text="+添加图片(可无)"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/normalSize"
+                    android:background="@color/colorGrayDark"
+                    android:gravity="center"
+                    android:id="@+id/add_share_imagechoose"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="15dp">
+
+
+            <EditText
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:hint="@string/add_content_text"
+            android:textColor="@color/colorGrayDark"
+            android:background="@null"
+            android:textSize="22sp"
+            android:id="@+id/add_share_content"
+            android:inputType="text"
+            android:textSelectHandle="@mipmap/ic_texthandler"
+            android:textSelectHandleLeft="@mipmap/ic_texthandler"
+            android:textSelectHandleRight="@mipmap/ic_texthandler"
+            android:textCursorDrawable="@null"
+            android:gravity="top"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/colorGrayDark" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="————出处"
+                android:textColor="@color/colorGrayDark"
+                android:background="@null"
+                android:textSize="22sp"
+                android:id="@+id/add_share_author"
+                android:inputType="text"
+                android:textSelectHandle="@mipmap/ic_texthandler"
+                android:textSelectHandleLeft="@mipmap/ic_texthandler"
+                android:textSelectHandleRight="@mipmap/ic_texthandler"
+                android:textCursorDrawable="@null"
+                android:gravity="end"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

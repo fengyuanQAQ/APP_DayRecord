@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_close"
+                android:layout_gravity="end"
+                android:id="@+id/login_register_x"
+                android:scaleType="centerCrop"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <EditText
+                    android:id="@+id/login_register_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="9"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/login_register_nickhint"
+                    android:textSize="20sp"
+                    android:drawablePadding="5dp"
+                    android:textSelectHandle="@mipmap/ic_texthandler"
+                    android:textSelectHandleLeft="@mipmap/ic_texthandler"
+                    android:textSelectHandleRight="@mipmap/ic_texthandler"
+                    android:textCursorDrawable="@null"
+                    android:inputType="text"/>
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/checkbutton_login_register"
+                    android:clickable="false"
+                    android:id="@+id/login_register_name_reflect"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/login_register_user"
+                    android:layout_width="0dp"
+                    android:layout_weight="9"
+                    android:layout_height="wrap_content"
+                    android:hint="账号(仅数字,6-15位)"
+                    android:inputType="text"
+                    android:textSize="20sp"
+                    android:drawableLeft="@mipmap/ic_login_user"
+                    android:drawablePadding="5dp"
+                    android:textSelectHandle="@mipmap/ic_texthandler"
+                    android:textSelectHandleLeft="@mipmap/ic_texthandler"
+                    android:textSelectHandleRight="@mipmap/ic_texthandler"
+                    android:textCursorDrawable="@null" />
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/checkbutton_login_register"
+                        android:clickable="false"
+                        android:id="@+id/login_register_num_reflect"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/smallSize"
+                android:text="该账号已被注册"
+                android:textColor="@color/colorRed"
+                android:gravity="center"
+                android:id="@+id/login_register_tips"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/login_register_pass"
+                android:layout_width="0dp"
+                android:layout_weight="9"
+                android:layout_height="wrap_content"
+                android:hint="密码(字母|数字,6-15位)"
+                android:textSize="20sp"
+                android:drawableLeft="@mipmap/ic_login_pass"
+                android:drawablePadding="5dp"
+                android:textSelectHandle="@mipmap/ic_texthandler"
+                android:textSelectHandleLeft="@mipmap/ic_texthandler"
+                android:textSelectHandleRight="@mipmap/ic_texthandler"
+                android:textCursorDrawable="@null"
+                android:inputType="text"/>
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/checkbutton_login_register"
+                    android:clickable="false"
+                    android:id="@+id/login_register_pass_reflect"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/login_register_confirmPass"
+                android:layout_width="0dp"
+                android:layout_weight="9"
+                android:layout_height="wrap_content"
+                android:hint="确认密码"
+                android:textSize="20sp"
+                android:drawableLeft="@mipmap/ic_login_pass"
+                android:drawablePadding="5dp"
+                android:textSelectHandle="@mipmap/ic_texthandler"
+                android:textSelectHandleLeft="@mipmap/ic_texthandler"
+                android:textSelectHandleRight="@mipmap/ic_texthandler"
+                android:textCursorDrawable="@null"
+                android:inputType="text"/>
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/checkbutton_login_register"
+                    android:clickable="false"
+                    android:id="@+id/login_register_secondpass_reflect"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="下一步"
+                android:foreground="?selectableItemBackground"
+                android:background="@color/colorBlue"
+                android:layout_marginTop="10dp"
+                android:id="@+id/login_register_next"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

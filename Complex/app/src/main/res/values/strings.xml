@@ -1,0 +1,22 @@
+<resources>
+    <string name="nullstring"> </string>
+    <string name="app_name">日迹v1.1</string>
+    <string name="mine_title">日迹</string>
+    <string name="defalut"> </string>
+
+    <string name="add_title">行程</string>
+    <string name="add_next">下一步</string>
+    <string name="add_content_title">标题(可无)</string>
+    <string name="add_content_text">正文</string>
+    <string name="add_content_time">时间(默认为当日)</string>
+    <string name="add_select">选择分类:</string>
+    <string name="add_select_item1">工作</string>
+    <string name="add_select_item2">娱乐</string>
+    <string name="add_select_item3">琐事</string>
+    <string name="add_select_item4">健身</string>
+
+    <string name="mine_popwnd_edit">编辑资料</string>
+    <string name="mine_popwnd_cancel">取消</string>
+    <string name="mine_popwnd_finish">完成</string>
+    <string name="login_register_nickhint"><![CDATA[昵称:(1<长度<10)]]></string>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:orientation="vertical"
+    android:background="@color/colorLink">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_close"
+            android:id="@+id/mine_edit_close" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/mine_popwnd_finish"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlue"
+            android:gravity="center|end"
+            android:id="@+id/mine_edit_finish"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/HeadImageScale"
+            android:layout_height="@dimen/HeadImageScale"
+            android:id="@+id/mine_edit_headimage"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_mine_head_default"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textSize="22sp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/mine_edit_name"
+            android:hint="用户名"
+            android:textSelectHandle="@mipmap/ic_texthandler"
+            android:textSelectHandleLeft="@mipmap/ic_texthandler"
+            android:textSelectHandleRight="@mipmap/ic_texthandler"
+            android:textCursorDrawable="@null"
+            android:inputType="text"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textSize="22sp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/mine_edit_signature"
+            android:hint="签名"
+            android:textSelectHandle="@mipmap/ic_texthandler"
+            android:textSelectHandleLeft="@mipmap/ic_texthandler"
+            android:textSelectHandleRight="@mipmap/ic_texthandler"
+            android:textCursorDrawable="@null"/>
+    </LinearLayout>
+
+</LinearLayout>

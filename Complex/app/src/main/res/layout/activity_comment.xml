@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:id="@+id/discover_comment_ll">
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="center"
+            android:src="@mipmap/ic_back2"
+            android:id="@+id/discover_comment_back"
+            android:background="@color/colorWhite"
+            android:foreground="?selectableItemBackground"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="评论"
+            android:textSize="@dimen/normalSize"
+            android:gravity="center"
+            android:paddingEnd="20dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray"
+        android:layout_below="@id/discover_comment_ll"
+        android:id="@+id/discover_comment_d1"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/discover_comment_recycler"
+        android:layout_below="@id/discover_comment_d1"
+        android:layout_above="@id/discover_comment_d2" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray"
+        android:id="@+id/discover_comment_d2"
+        android:layout_above="@+id/discover_comment_ll2"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/discover_comment_ll2">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:textSize="@dimen/smallSize"
+            android:hint="写下感悟"
+            android:background="@null"
+            android:id="@+id/discover_comment_sendContent"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="发送"
+            android:gravity="center"
+            android:textColor="@color/colorBlue"
+            android:textSize="@dimen/normalSize"
+            android:id="@+id/discover_comment_send"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

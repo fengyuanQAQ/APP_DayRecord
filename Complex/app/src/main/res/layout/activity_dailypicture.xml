@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="21dp"
+        android:layout_marginLeft="15dp">
+
+        <ImageView
+            android:id="@+id/dailypicture"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/picdec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="图片描述：\n"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="60dp"
+            android:textColor="@color/colorDark"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

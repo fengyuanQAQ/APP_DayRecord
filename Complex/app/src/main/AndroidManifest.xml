@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dayrecord">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera2" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_app"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="landscape"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activity.CommentActivity"></activity>
+        <activity android:name=".activity.home.PoisionActivity" />
+        <activity android:name=".activity.home.OnewordActivity" />
+        <activity android:name=".activity.home.PoetryActivity" />
+        <activity android:name=".activity.home.JokeActivty" />
+        <activity android:name=".activity.home.MusicActivity" />
+        <activity android:name=".activity.home.WeatherActivity" />
+        <activity android:name=".activity.home.ArticleActivity" />
+        <activity android:name=".activity.home.EventHistoryActivity" />
+        <activity android:name=".activity.home.DailyPictureActivity" />
+        <activity android:name=".activity.BrowseShareItemActivity" />
+        <activity android:name=".activity.ShowActivity" />
+        <activity android:name=".activity.SettingActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".activity.EditActivity" />
+        <activity android:name=".activity.AddActivity" />
+        <activity android:name=".activity.HomeActivity" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

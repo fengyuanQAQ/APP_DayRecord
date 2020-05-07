@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+   <RelativeLayout
+       android:layout_width="285dp"
+       android:layout_height="match_parent"
+       android:orientation="horizontal"
+       android:id="@+id/home_home_recycler_item_rl"
+       android:background="#ffffff"
+       android:layout_marginTop="15dp"
+       android:layout_marginBottom="15dp">
+
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="160dp"
+           android:src="@drawable/image_login_book"
+           android:scaleType="centerCrop"
+           android:layout_alignParentTop="true"
+           android:id="@+id/home_home_recycler_item_rl_image"/>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="15sp"
+           android:layout_below="@id/home_home_recycler_item_rl_image"
+           android:text="还没有呢"
+           android:layout_marginTop="40dp"/>
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:layout_above="@id/home_home_recycler_item_rl_ll"
+           android:background="@color/colorGray"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="30dp"
+           android:orientation="horizontal"
+           android:layout_alignParentBottom="true"
+           android:id="@+id/home_home_recycler_item_rl_ll"
+           android:background="@color/colorLink">
+
+           <TextView
+               android:gravity="center"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:id="@+id/home_home_recycler_item_rl_star"
+               android:text="0"
+               android:drawableStart="@mipmap/ic_home_content_comment"
+               android:paddingStart="50dp"
+               android:paddingEnd="45dp"
+               android:textSize="18sp"/>
+
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:gravity="center"
+               android:id="@+id/home_home_recycler_item_rl_comment"
+               android:text="0"
+               android:drawableStart="@mipmap/ic_home_content_star"
+               android:paddingStart="50dp"
+               android:paddingEnd="50dp"
+               android:textSize="18sp"
+               />
+
+       </LinearLayout>
+
+   </RelativeLayout>
+
+</LinearLayout>
